@@ -9,11 +9,26 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  dio: ^5.8.0+1
+  flutter_dotenv: ^5.2.1
+  flutter_secure_storage: ^9.2.4
+  provider: ^6.1.5
+  go_router: ^15.2.3
+  infinite_scroll_pagination: ^5.1.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^5.0.0
+  build_runner: ^2.4.15
+  flutter_gen_runner: ^5.10.0
 
 flutter:
   uses-material-design: true
+
+  assets:
+    - .env
+    - lib/assets/img/
+
+flutter_gen:
+  output: lib/assets/
