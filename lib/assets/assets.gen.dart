@@ -29,11 +29,14 @@ class $LibAssetsImgGen {
   /// File path: lib/assets/img/google.png
   AssetGenImage get google => const AssetGenImage('lib/assets/img/google.png');
 
+  /// File path: lib/assets/img/me.png
+  AssetGenImage get me => const AssetGenImage('lib/assets/img/me.png');
+
   /// File path: lib/assets/img/splash.png
   AssetGenImage get splash => const AssetGenImage('lib/assets/img/splash.png');
 
   /// List of all assets
-  List<AssetGenImage> get values => [google, splash];
+  List<AssetGenImage> get values => [google, me, splash];
 }
 
 class Assets {
