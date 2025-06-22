@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:nge_store/assets/assets.gen.dart';
 import 'package:nge_store/utils/helper/divider_helper.dart';
 import 'package:nge_store/utils/helper/style_helper.dart';
