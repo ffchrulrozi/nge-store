@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:nge_store/modules/dashboard/providers/dashboard_provider.dart';
+import 'package:nge_store/modules/dashboard/screens/dashboard_screen.dart';
 import 'package:nge_store/modules/login/providers/login_provider.dart';
 import 'package:nge_store/modules/login/screens/login_screen.dart';
 import 'package:nge_store/modules/splash/providers/splash_provider.dart';
@@ -25,6 +27,13 @@ final GoRouter routers = GoRouter(
       builder: (context, state) => ChangeNotifierProvider(
         create: (_) => LoginProvider(),
         child: const LoginScreen(),
+      ),
+    ),
+    GoRoute(
+      path: Paths.DASHBOARD,
+      builder: (context, state) => ChangeNotifierProvider(
+        create: (_) => DashboardProvider(),
+        child: const DashboardScreen(),
       ),
     ),
   ],
