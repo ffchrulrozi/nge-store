@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:nge_store/modules/dashboard/providers/dashboard_provider.dart';
+import 'package:nge_store/modules/home/providers/home_provider.dart';
 import 'package:nge_store/theme/app_theme.dart';
 import 'package:provider/provider.dart';
 import 'package:nge_store/modules/login/providers/login_provider.dart';
@@ -18,6 +19,9 @@ void main() {
         ),
         ChangeNotifierProvider<DashboardProvider>(
           create: (_) => DashboardProvider(),
+        ),
+        ChangeNotifierProvider<HomeProvider>(
+          create: (_) => HomeProvider(),
         ),
       ],
       child: MainApp(),

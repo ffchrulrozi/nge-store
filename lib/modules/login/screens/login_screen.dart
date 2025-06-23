@@ -74,13 +74,15 @@ class LoginScreen extends StatelessWidget {
               ),
             ),
             Positioned(
-                bottom: 25,
-                child: SizedBox(
-                    width: 100.w(context),
-                    child: Text(
-                      "App version 1.0.0",
-                      textAlign: TextAlign.center,
-                    ))),
+              bottom: 25,
+              child: SizedBox(
+                width: 100.w(context),
+                child: Text(
+                  "App version 1.0.0",
+                  textAlign: TextAlign.center,
+                ),
+              ),
+            ),
             if (provider.isLoading)
               AbsorbPointer(
                 absorbing: true,

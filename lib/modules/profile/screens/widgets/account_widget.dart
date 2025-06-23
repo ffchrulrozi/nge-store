@@ -9,7 +9,7 @@ class AccountWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.deepPurple,
+      color: Colors.purple,
       padding: EdgeInsets.only(top: 30, bottom: 20, left: 20, right: 20),
       child: Column(
         children: [
