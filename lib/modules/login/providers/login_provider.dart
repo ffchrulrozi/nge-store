@@ -7,6 +7,6 @@ class LoginProvider extends BaseProvider {
   var isLoading = false;
 
   void login(BuildContext context){
-    context.go(Paths.DASHBOARD);
+    context.go(Paths.DASHBOARD.path);
   }
 }

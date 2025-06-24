@@ -13,7 +13,6 @@ class DashboardScreen extends StatelessWidget {
     return Consumer<DashboardProvider>(builder:
         (BuildContext context, DashboardProvider provider, Widget? child) {
       return Scaffold(
-        backgroundColor: Color.fromRGBO(255, 255, 255, 10),
         body: IndexedStack(index: provider.screenIndex, children: [HomeScreen(),TransactionScreen(),ProfileScreen(),],),
         bottomNavigationBar: BottomNavigationBar(
             currentIndex: provider.screenIndex,

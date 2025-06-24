@@ -1,5 +1,13 @@
 class Paths {
-  static const SPLASH = '/splash';
-  static const LOGIN = '/login';
-  static const DASHBOARD = '/dashboard';
+  static PathObject SPLASH = PathObject('splash', '/splash');
+  static PathObject LOGIN = PathObject('login', '/login');
+  static PathObject DASHBOARD = PathObject('dashboard', '/dashboard');
+  static PathObject PRODUCT = PathObject('product', '/product/:id');
+}
+
+class PathObject{
+  final String name;
+  final String path;
+
+  PathObject(this.name, this.path);
 }

@@ -11,7 +11,7 @@ class SplashProvider extends BaseProvider {
   void onInit() {
     Future.delayed(
       Duration(seconds: 2),
-      () => navigatorKey.currentContext?.go(Paths.LOGIN),
+      () => navigatorKey.currentContext?.go(Paths.LOGIN.path),
     );
   }
 }

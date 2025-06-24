@@ -13,6 +13,7 @@ class LoginScreen extends StatelessWidget {
     return Consumer<LoginProvider>(
         builder: (BuildContext context, LoginProvider provider, Widget? child) {
       return Scaffold(
+        backgroundColor: Colors.white,
         body: Stack(
           children: [
             Padding(
