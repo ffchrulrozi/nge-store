@@ -3,8 +3,11 @@ import 'package:go_router/go_router.dart';
 import 'package:nge_store/modules/home/models/product.dart';
 import 'package:nge_store/modules/home/providers/home_provider.dart';
 import 'package:nge_store/routes/app_paths.dart';
+import 'package:nge_store/shared/providers/models/cart.dart';
+import 'package:nge_store/shared/providers/cart_provider.dart';
 import 'package:nge_store/utils/helper/divider_helper.dart';
 import 'package:nge_store/utils/helper/style_helper.dart';
+import 'package:provider/provider.dart';
 
 class ProductWidget extends StatelessWidget {
   const ProductWidget(this.provider, {super.key});
@@ -129,13 +132,24 @@ class ProductCard extends StatelessWidget {
                     ),
                   ),
                   Expanded(
-                    child: Container(
-                      color: Colors.teal,
-                      padding: EdgeInsets.symmetric(vertical: 10),
-                      child: Text(
-                        "Add to Cart",
-                        textAlign: TextAlign.center,
-                        style: TextStyle(color: Colors.white),
+                    child: InkWell(
+                      onTap: () => context.read<CartProvider>().addCart(
+                            Cart(
+                              id: product.id!,
+                              title: product.title,
+                              image: product.thumbnail,
+                              price: double.parse(currentPrice),
+                              amount: 1,
+                            ),
+                          ),
+                      child: Container(
+                        color: Colors.teal,
+                        padding: EdgeInsets.symmetric(vertical: 10),
+                        child: Text(
+                          "Add to Cart",
+                          textAlign: TextAlign.center,
+                          style: TextStyle(color: Colors.white),
+                        ),
                       ),
                     ),
                   )

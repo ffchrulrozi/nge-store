@@ -5,6 +5,7 @@ import 'package:nge_store/modules/home/screens/widgets/category_widget.dart';
 import 'package:nge_store/modules/home/screens/widgets/information_widget.dart';
 import 'package:nge_store/modules/home/screens/widgets/product_widget.dart';
 import 'package:nge_store/utils/helper/divider_helper.dart';
+import 'package:nge_store/shared/widgets/cart_widget.dart';
 import 'package:provider/provider.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -30,7 +31,7 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
             actions: [
-              Icon(Icons.shopping_cart, size: 30),
+              CartWidget(),
               h(1),
               Icon(Icons.chat, size: 30),
               h(1),

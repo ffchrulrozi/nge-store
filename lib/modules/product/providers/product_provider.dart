@@ -30,6 +30,17 @@ class ProductProvider extends BaseProvider {
     }
   }
 
+  double getCurrentPrice() {
+    if (product == null) {
+      return 0;
+    } else {
+      final String currentPrice = ((product!.price ?? 0) *
+              (1 - (product!.discountPercentage ?? 0) / 100))
+          .toStringAsFixed(2);
+      return double.parse(currentPrice);
+    }
+  }
+
   String? getDimension(product_model.Dimensions? dimensions) {
     String response = "";
     if (dimensions == null) return null;

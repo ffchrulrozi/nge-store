@@ -10,75 +10,74 @@ class HeaderWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-      final product = provider.product!;
-      final String currentPrice =
-          ((product.price ?? 0) * (1 - (product.discountPercentage ?? 0) / 100))
-              .toStringAsFixed(2);
+    final product = provider.product!;
+    final double currentPrice = provider.getCurrentPrice();
 
-      return Container(
-        color: Colors.white,
-        padding: EdgeInsets.all(20),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
+    return Container(
+      color: Colors.white,
+      padding: EdgeInsets.all(20),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            product.title ?? "",
+            style: text(context).titleMedium,
+          ),
+          h(1),
+          Row(
+            children: [
+              Icon(
+                Icons.star,
+                color: Colors.deepOrange,
+              ),
+              Text(product.rating.toString()),
+              h(2),
+              Text("${product.stock} sold")
+            ],
+          ),
+          v(1),
+          Row(children: [
             Text(
-              product.title ?? "",
-              style: text(context).titleMedium,
+              "\$${product.price}",
+              style: text(context).titleSmall!.copyWith(
+                    decoration:
+                        currentPrice > 0 ? TextDecoration.lineThrough : null,
+                  ),
             ),
             h(1),
-            Row(
-              children: [
-                Icon(
-                  Icons.star,
-                  color: Colors.deepOrange,
-                ),
-                Text(product.rating.toString()),
-                h(2),
-                Text("${product.stock} sold")
-              ],
-            ),
-            v(1),
-            Row(children: [
-              Text(
-                "\$${product.price}",
-                style: text(context).titleSmall!.copyWith(
-                      decoration: currentPrice != ""
-                          ? TextDecoration.lineThrough
-                          : null,
-                    ),
+            Container(
+              padding: EdgeInsets.symmetric(horizontal: 5, vertical: 3),
+              decoration: BoxDecoration(
+                color: Colors.purple,
+                borderRadius: BorderRadius.circular(10),
               ),
-              h(1),
-              Container(
-                padding: EdgeInsets.symmetric(horizontal: 5, vertical: 3),
-                decoration: BoxDecoration(
-                  color: Colors.purple,
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                child: Text(
-                  "${product.discountPercentage}%",
-                  style:
-                      text(context).labelSmall!.copyWith(color: Colors.white),
-                ),
-              )
-            ]),
-            Row(
-              children: [
-                Text(
-                  "\$$currentPrice",
-                  style: text(context)
-                      .titleMedium!
-                      .copyWith(fontWeight: FontWeight.bold),
-                ),
-                Spacer(),
-                Icon(FontAwesomeIcons.bookmark, color: Colors.black,),
-                h(2),
-                Icon(FontAwesomeIcons.heart),
-                h(0.5),
-                Text("110"),
-              ],
-            ),
-          ],
-        ),
-      );
+              child: Text(
+                "${product.discountPercentage}%",
+                style: text(context).labelSmall!.copyWith(color: Colors.white),
+              ),
+            )
+          ]),
+          Row(
+            children: [
+              Text(
+                "\$$currentPrice",
+                style: text(context)
+                    .titleMedium!
+                    .copyWith(fontWeight: FontWeight.bold),
+              ),
+              Spacer(),
+              Icon(
+                FontAwesomeIcons.bookmark,
+                color: Colors.black,
+              ),
+              h(2),
+              Icon(FontAwesomeIcons.heart),
+              h(0.5),
+              Text("110"),
+            ],
+          ),
+        ],
+      ),
+    );
   }
 }

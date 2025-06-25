@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:nge_store/modules/checkout/providers/checkout_provider.dart';
+import 'package:nge_store/modules/checkout/screens/checkout_screen.dart';
 import 'package:nge_store/modules/dashboard/providers/dashboard_provider.dart';
 import 'package:nge_store/modules/dashboard/screens/dashboard_screen.dart';
 import 'package:nge_store/modules/home/providers/home_provider.dart';
@@ -63,6 +65,14 @@ final GoRouter routers = GoRouter(
       builder: (context, state) => ChangeNotifierProvider(
         create: (_) => ProductProvider(state.pathParameters["id"]!),
         child: const ProductScreen(),
+      ),
+    ),
+    GoRoute(
+      path: Paths.CHECKOUT.path,
+      name: Paths.CHECKOUT.name,
+      builder: (context, state) => ChangeNotifierProvider(
+        create: (_) => CheckoutProvider(),
+        child: const CheckoutScreen(),
       ),
     ),
   ],
