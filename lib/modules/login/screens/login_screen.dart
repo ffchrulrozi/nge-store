@@ -81,7 +81,7 @@ class LoginScreen extends StatelessWidget {
               child: SizedBox(
                 width: 100.w(context),
                 child: Text(
-                  "App version 1.0.0",
+                  "App version ${provider.appVersion}",
                   textAlign: TextAlign.center,
                 ),
               ),

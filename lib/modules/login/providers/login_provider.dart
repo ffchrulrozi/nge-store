@@ -7,11 +7,23 @@ import 'package:nge_store/routes/app_routes.dart';
 import 'package:nge_store/services/auth_service.dart';
 import 'package:nge_store/services/hive/hive_key.dart';
 import 'package:nge_store/shared/hive_models/account.dart';
+import 'package:package_info_plus/package_info_plus.dart';
 
 class LoginProvider extends BaseProvider {
   final AuthService _authService = AuthService();
+  String appVersion = "";
   var isLoading = false;
   String? status;
+
+  LoginProvider(){
+    _getAppVersion();
+  }
+
+  void _getAppVersion ()async{
+    PackageInfo packageInfo = await PackageInfo.fromPlatform();
+    appVersion = packageInfo.version;
+    notifyListeners();
+  }
 
   void login(BuildContext context) {
     _authService.signInWithGoogle().then((value) {
