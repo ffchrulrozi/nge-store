@@ -66,11 +66,13 @@ class LoginScreen extends StatelessWidget {
                             height: 40,
                           ),
                           h(1),
-                          Text("Login with Google")
+                          Text("Login with Google"),
                         ],
                       ),
                     ),
                   ),
+                  v(1),
+                  Text(provider.status ?? "")
                 ],
               ),
             ),

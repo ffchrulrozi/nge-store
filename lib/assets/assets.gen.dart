@@ -45,14 +45,8 @@ class $LibAssetsImgGen {
   AssetGenImage get splash => const AssetGenImage('lib/assets/img/splash.png');
 
   /// List of all assets
-  List<AssetGenImage> get values => [
-    google,
-    me,
-    slide1,
-    slide2,
-    slide3,
-    splash,
-  ];
+  List<AssetGenImage> get values =>
+      [google, me, slide1, slide2, slide3, splash];
 }
 
 class Assets {
@@ -66,7 +60,11 @@ class Assets {
 }
 
 class AssetGenImage {
-  const AssetGenImage(this._assetName, {this.size, this.flavors = const {}});
+  const AssetGenImage(
+    this._assetName, {
+    this.size,
+    this.flavors = const {},
+  });
 
   final String _assetName;
 
@@ -126,8 +124,15 @@ class AssetGenImage {
     );
   }
 
-  ImageProvider provider({AssetBundle? bundle, String? package}) {
-    return AssetImage(_assetName, bundle: bundle, package: package);
+  ImageProvider provider({
+    AssetBundle? bundle,
+    String? package,
+  }) {
+    return AssetImage(
+      _assetName,
+      bundle: bundle,
+      package: package,
+    );
   }
 
   String get path => _assetName;

@@ -16,12 +16,12 @@ class ProfileScreen extends StatelessWidget {
       builder: (context, provider, child) {
         return Column(
           children: [
-            AccountWidget(),
+            AccountWidget(provider),
             ActivityWidget(),
             v(1),
             SupportWidget(),
             v(1),
-            LogoutWidget(),
+            LogoutWidget(provider),
           ],
         );
       },
