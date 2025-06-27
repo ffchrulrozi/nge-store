@@ -9,13 +9,17 @@ class CarouselWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CarouselSlider(
-      options: CarouselOptions(height:150, autoPlay: true, enlargeCenterPage: true, viewportFraction: 0.75),
+      options: CarouselOptions(
+          height: 150,
+          autoPlay: true,
+          enlargeCenterPage: true,
+          viewportFraction: 0.75),
       items: provider.carousels
           .map(
             (carousel) => ClipRRect(
               borderRadius: BorderRadius.circular(10),
-              child: Image.asset(
-                carousel,
+              child: Image.network(
+                carousel.image ?? "",
                 width: 300,
                 height: 150,
                 fit: BoxFit.cover,

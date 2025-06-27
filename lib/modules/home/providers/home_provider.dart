@@ -1,23 +1,33 @@
 import 'dart:convert';
-
-import 'package:nge_store/assets/assets.gen.dart';
+import 'package:firebase_remote_config/firebase_remote_config.dart';
 import 'package:nge_store/base/base_provider.dart';
+import 'package:nge_store/modules/home/models/carousel.dart';
 import 'package:nge_store/modules/home/models/category.dart' as category;
 import 'package:nge_store/modules/home/models/product.dart';
 
 class HomeProvider extends BaseProvider {
-  final List<String> carousels = [
-    Assets.lib.assets.img.slide1.path,
-    Assets.lib.assets.img.slide2.path,
-    Assets.lib.assets.img.slide3.path,
-  ];
-
+  List<Carousel> carousels = [];
   List<category.Category> categories = [];
   String selectedCategory = "";
   Product product = Product();
 
   HomeProvider() {
+    getCarousel();
     getCategory();
+  }
+
+  void getCarousel() async {
+    final remoteConfig = FirebaseRemoteConfig.instance;
+    await remoteConfig.fetchAndActivate();
+    await remoteConfig.setConfigSettings(
+      RemoteConfigSettings(
+          fetchTimeout: Duration(seconds: 30),
+          minimumFetchInterval: Duration.zero),
+    );
+
+    var response = jsonDecode(remoteConfig.getString('home_carousel_images'));
+    carousels = carouselFromJson(jsonEncode(response));
+    notifyListeners();
   }
 
   void getCategory() async {
