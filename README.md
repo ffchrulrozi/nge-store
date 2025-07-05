@@ -52,13 +52,13 @@
   <li>
     <b>Dashboard</b>
     <p>There are 3 main features here: home, transaction, and profile.<br />User can go to each page using bottom navigation.<br/>In home, user can see carousel, information, and show product list by category.</p>
-    <img src="./git-img/3-dashboard.png.png" style="height:200px; width: 90px; object-fit:cover" />
+    <img src="./git-img/3-dashboard.png" style="height:200px; width: 90px; object-fit:cover" />
   </li>
   <li>
     <b>Product</b>
     <p>Show product's detail</p>
-    <img src="./git-img/4.1-product.png.png" style="height:200px; width: 90px; object-fit:cover" />
-    <img src="./git-img/4.2-product.png.png" style="height:200px; width: 90px; object-fit:cover" />
+    <img src="./git-img/4.1-product.png" style="height:200px; width: 90px; object-fit:cover" />
+    <img src="./git-img/4.2-product.png" style="height:200px; width: 90px; object-fit:cover" />
   </li>
   <li>
     <b>Cart</b>
