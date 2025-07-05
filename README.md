@@ -42,7 +42,7 @@
   <li>
     <b>Splash</b>
     <p>Show splash screen for several seconds, then go to onboarding page.</p>
-    <img src="./git-img/splash.png" style="height:200px; width: 90px; object-fit:cover" />
+    <img src="./git-img/1-splash.png" style="height:200px; width: 90px; object-fit:cover" />
   </li>
   <li>
     <b>Login</b>
@@ -68,11 +68,11 @@
   <li>
     <b>Transaction</b>
     <p>Show list of transaction<br />This still in static data.</p>
-    <img src="./git-img/.png" style="height:200px; width: 90px; object-fit:cover" />
+    <img src="./git-img/6-transaction.png" style="height:200px; width: 90px; object-fit:cover" />
   </li>
   <li>
     <b>Profile</b>
     <p>Show profile data.</p>
-    <img src="./git-img/.png" style="height:200px; width: 90px; object-fit:cover" />
+    <img src="./git-img/7-profile.png" style="height:200px; width: 90px; object-fit:cover" />
   </li>
 </ul>
