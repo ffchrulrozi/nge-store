@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:nge_store/modules/splash/providers/splash_provider.dart';
 import 'package:nge_store/utils/ext/size_ext.dart';
 import 'package:provider/provider.dart';
