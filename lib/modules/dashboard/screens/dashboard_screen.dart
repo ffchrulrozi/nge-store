@@ -13,7 +13,14 @@ class DashboardScreen extends StatelessWidget {
     return Consumer<DashboardProvider>(builder:
         (BuildContext context, DashboardProvider provider, Widget? child) {
       return Scaffold(
-        body: IndexedStack(index: provider.screenIndex, children: [HomeScreen(),TransactionScreen(),ProfileScreen(),],),
+        body: IndexedStack(
+          index: provider.screenIndex,
+          children: [
+            HomeScreen(),
+            TransactionScreen(),
+            ProfileScreen(),
+          ],
+        ),
         bottomNavigationBar: BottomNavigationBar(
             currentIndex: provider.screenIndex,
             onTap: (value) => provider.setScreenIndex(value),

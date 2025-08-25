@@ -51,7 +51,7 @@ class LoginScreen extends StatelessWidget {
                   ),
                   v(10),
                   InkWell(
-                    onTap: () => provider.login(context),
+                    onTap: () => provider.login(),
                     child: Container(
                       decoration: BoxDecoration(
                           border: Border.all(),

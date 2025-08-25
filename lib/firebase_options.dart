@@ -50,21 +50,19 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyBSk4Sm6nbRr56zQPuW_O-YMkUi8x-AMnw',
-    appId: '1:1082843459756:android:197246330b552597f1ef09',
-    messagingSenderId: '1082843459756',
-    projectId: 'my-personal-project-da872',
-    storageBucket: 'my-personal-project-da872.firebasestorage.app',
+    apiKey: 'AIzaSyC0wwf_MNTd9ae6YAU4tPfTXh2zzh7sp6E',
+    appId: '1:111315039953:android:be826cb796bb8597a0f7f0',
+    messagingSenderId: '111315039953',
+    projectId: 'my-personal-projects-b08b5',
+    storageBucket: 'my-personal-projects-b08b5.firebasestorage.app',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyAX5cffSzD1kh4o0eqORs_25y0skScsGyU',
-    appId: '1:1082843459756:ios:1ed1e65d58e1db6bf1ef09',
-    messagingSenderId: '1082843459756',
-    projectId: 'my-personal-project-da872',
-    storageBucket: 'my-personal-project-da872.firebasestorage.app',
-    androidClientId: '1082843459756-0qv1kv0pun8r98cssftdbqe5vfci26ov.apps.googleusercontent.com',
-    iosClientId: '1082843459756-iqc9fd8i68ntn5i9491ba9767mucvuc3.apps.googleusercontent.com',
+    apiKey: 'AIzaSyAaCkXc0fcRvIfKp3Lk_Dgr0nrhnaJuHEA',
+    appId: '1:398693294775:ios:b85e57865078878b0ca332',
+    messagingSenderId: '398693294775',
+    projectId: 'portfolio-b93f6',
+    storageBucket: 'portfolio-b93f6.firebasestorage.app',
     iosBundleId: 'com.example.ngeStore',
   );
 

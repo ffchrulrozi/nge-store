@@ -1,49 +1,42 @@
 {
   "project_info": {
-    "project_number": "1082843459756",
-    "project_id": "my-personal-project-da872",
-    "storage_bucket": "my-personal-project-da872.firebasestorage.app"
+    "project_number": "111315039953",
+    "project_id": "my-personal-projects-b08b5",
+    "storage_bucket": "my-personal-projects-b08b5.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1082843459756:android:197246330b552597f1ef09",
+        "mobilesdk_app_id": "1:111315039953:android:be826cb796bb8597a0f7f0",
         "android_client_info": {
-          "package_name": "com.example.nge_store"
+          "package_name": "com.example.nge_store3"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1082843459756-5g6dpkomq3rfg0ge3vpbd227s38f22o4.apps.googleusercontent.com",
+          "client_id": "111315039953-chddffgi4r6tkn01263hnchgsgd76r75.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.nge_store",
-            "certificate_hash": "2e5e37841e9e805d276f152f9dd6ba31170727b9"
+            "package_name": "com.example.nge_store3",
+            "certificate_hash": "c3122b86caa1a0dfc9ae60803b77160a4edf6cc8"
           }
         },
         {
-          "client_id": "1082843459756-8858jdgikfbtn191ggusvbc2eo5iojce.apps.googleusercontent.com",
+          "client_id": "111315039953-erhdbt87lctdbnff68v79iqv2tg06ni4.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBSk4Sm6nbRr56zQPuW_O-YMkUi8x-AMnw"
+          "current_key": "AIzaSyC0wwf_MNTd9ae6YAU4tPfTXh2zzh7sp6E"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "1082843459756-8858jdgikfbtn191ggusvbc2eo5iojce.apps.googleusercontent.com",
+              "client_id": "111315039953-erhdbt87lctdbnff68v79iqv2tg06ni4.apps.googleusercontent.com",
               "client_type": 3
-            },
-            {
-              "client_id": "1082843459756-iqc9fd8i68ntn5i9491ba9767mucvuc3.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.example.ngeStore"
-              }
             }
           ]
         }
