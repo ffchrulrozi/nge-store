@@ -42,32 +42,32 @@
   <li>
     <b>Splash</b>
     <p>Show splash screen for several seconds, then go to onboarding page.</p>
-    <img src="./git-img/1-splash.png" style="height:200px; width: 90px; object-fit:cover" />
+    <img src="./git-img/1-splash.png" style="height:200px; width: 115px; object-fit:cover" />
   </li>
   <li>
     <b>Login</b>
     <p>Check first if user token exist then auto redirect to dashboard page.<br />If not yet, show login page, then show pop up "Login with Google".</p>
-    <img src="./git-img/2-login.png" style="height:200px; width: 90px; object-fit:cover" />
+    <img src="./git-img/2-login.png" style="height:200px; width: 115px; object-fit:cover" />
   </li>
   <li>
     <b>Dashboard</b>
     <p>There are 3 main features here: home, transaction, and profile.<br />User can go to each page using bottom navigation.<br/>In home, user can see carousel, information, and show product list by category.</p>
-    <img src="./git-img/3-dashboard.png" style="height:200px; width: 90px; object-fit:cover" />
+    <img src="./git-img/3-dashboard.png" style="height:200px; width: 115px; object-fit:cover" />
   </li>
   <li>
     <b>Product</b>
     <p>Show product's detail</p>
-    <img src="./git-img/4.1-product.png" style="height:200px; width: 90px; object-fit:cover" />
-    <img src="./git-img/4.2-product.png" style="height:200px; width: 90px; object-fit:cover" />
+    <img src="./git-img/4.1-product.png" style="height:200px; width: 115px; object-fit:cover" />
+    <img src="./git-img/4.2-product.png" style="height:200px; width: 115px; object-fit:cover" />
   </li>
   <li>
     <b>Cart</b>
     <p>When user click "Add to Cart" button to a product both from home page product list or product detail, it will auto add number of cart in the app bar.<br />If click it icon, will show page like this:</p>
-    <img src="./git-img/5-cart.png" style="height:200px; width: 90px; object-fit:cover" />
+    <img src="./git-img/5-cart.png" style="height:200px; width: 115px; object-fit:cover" />
   </li>
   <li>
     <b>Profile</b>
     <p>Show profile data.</p>
-    <img src="./git-img/6-profile.png" style="height:200px; width: 90px; object-fit:cover" />
+    <img src="./git-img/6-profile.png" style="height:200px; width: 115px; object-fit:cover" />
   </li>
 </ul>
