@@ -66,13 +66,8 @@
     <img src="./git-img/5-cart.png" style="height:200px; width: 90px; object-fit:cover" />
   </li>
   <li>
-    <b>Transaction</b>
-    <p>Show list of transaction<br />This still in static data.</p>
-    <img src="./git-img/6-transaction.png" style="height:200px; width: 90px; object-fit:cover" />
-  </li>
-  <li>
     <b>Profile</b>
     <p>Show profile data.</p>
-    <img src="./git-img/7-profile.png" style="height:200px; width: 90px; object-fit:cover" />
+    <img src="./git-img/6-profile.png" style="height:200px; width: 90px; object-fit:cover" />
   </li>
 </ul>
